@@ -56,3 +56,29 @@ function delWebhook() {
         alert('Successfully deleted the webhook!');
     });
 };
+
+function direct() {
+    window.location.href = "https://xoalone.github.io/webhooker/embed.html";
+};
+
+function sendEmbed() {
+    // Variables
+    var url = document.getElementById('URL').value;
+    if (url === '') return alert('Please type a Discord Webhook URL to delete!');
+
+    var payload = document.getElementById('payload').value;
+
+    // JSON Payload Data
+    const jsonData = {
+        "payload_json": payload,
+    };
+
+    // Post To Discord Webhook
+    fetch(url, {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(jsonData),
+    });
+};
