@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webhooker - Embed Sender</title>
+    <meta name="title" content="Webhooker - Embed Sender">
+    <meta name="description" content="A simple Discord webhook website.">
+    <meta name="keywords" content="webhook sender, discord, webhook, discord webhook, webhook spammer, webhooker">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="images/webhooker.png"/>
+    <script src="script.js"></script>
+</head>
+<body class="bg-dark">
+    <p class="text-info text-center font-weight-bold text-uppercase" style="font-size:5vw">
+        Webhooker
+        <p class="text-info text-center font-weight-bold text-uppercase" style="font-size:1vw">
+            A Simple Discord Webhook Website
+        </p>
+        <p class="text-center" style="color: white;">
+            Instructions: <br>
+            1. Input your JSON Payload into the input box <br>
+            2. Click the 'SEND EMBED' button <br>
+            3. Voila! You're done!
+        </p>
+    </p>
+
+    <div class="text-center mx-auto" style="height: 100px;">
+        <input style="height: 50px;" required placeholder="WEBHOOK URL" size="55" class="rounded-lg" id="URL">
+    </div>
+
+    <div class="text-center mx-auto" style="height: 100px;">
+        <input style="height: 50px;" required placeholder="JSON PAYLOAD" size="55" class="rounded-lg" id="payload">
+    </div>
+
+    <div class="text-center mx-auto" style="height: 50px;">
+        <button class="btn btn-success" style="width: 200px;" type="submit" onclick="sendEmbed()">SEND EMBED</button>
+    </div>
+</body>
+</html>
