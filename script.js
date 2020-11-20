@@ -61,6 +61,10 @@ function direct() {
     window.location.href = "https://xoalone.github.io/webhooker/embed.html";
 };
 
+function direct2() {
+    window.location.href = "https://xoalone.github.io/webhooker/index.html";
+};
+
 function sendEmbed() {
     // Variables
     var url = document.getElementById('URL').value;
